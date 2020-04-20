@@ -1,0 +1,19 @@
+{
+  "name": "benchmark",
+  "scripts": {
+    "start-with-tsw": "NODE_OPTIONS='--inspect=localhost:3001' tsw ./scripts/koa.js",
+    "start-with-node": "node ./scripts/koa.js",
+    "benchmark": "autocannon -c100 -d10 http://localhost:3000"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@tswjs/open-platform-plugin": "^1.1.1",
+    "@tswjs/tsw": "^2.0.0",
+    "autocannon": "^4.6.0",
+    "koa": "^2.11.0",
+    "winston": "^3.2.1",
+    "winston-transport": "^4.3.0"
+  }
+}
